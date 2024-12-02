@@ -289,7 +289,7 @@ button {
     padding-bottom: 90px;
 }
 
-.banner_taital {
+.banner_title {
     width: 100%;
     float: left;
     color: #ffffff;
@@ -486,7 +486,7 @@ html {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #ffffff;
+    color: light-dark(#ffffff, black);
     text-align: center;
     margin: 0px;
 }
@@ -495,7 +495,7 @@ html {
     width: 100%;
     float: left;
     font-size: 50px;
-    color: #141414;
+    color: light-dark(#141414, white);
     padding-top: 15px;
     text-transform: uppercase;
 }
@@ -515,25 +515,11 @@ html {
     display: flex;
 }
 
-.mins_text {
-    width: 100%;
-    font-size: 18px;
-    color: #4d4d4d;
-}
-
-.mins_text_1 {
-    width: 70%;
-    float: left;
-    font-size: 18px;
-    font-size: 18px;
-    color: #1e1e1e;
-}
-
 .long_text {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #4d4d4d;
+    color: light-dark(#4d4d4d, white);
     margin-left: 0px;
 }
 
@@ -543,18 +529,17 @@ html {
 }
 
 
-
 .padding_10 {
     padding-left: 8px;
 }
 
-.paly_bt {
+.play_bt {
     width: 170px;
     float: left;
     padding-top: 50px;
 }
 
-.paly_bt a {
+.play_bt a {
     width: 100%;
     float: left;
     font-size: 18px;
@@ -565,7 +550,7 @@ html {
     border-radius: 40px;
 }
 
-.paly_bt a:hover {
+.play_bt a:hover {
     color: #ffffff;
     background-color: #141414;
 }
@@ -828,7 +813,7 @@ input.email_text::placeholder {
     padding: 10px 10px;
 }
 
-.cooming_section {
+.coming_section {
     width: 100%;
     float: left;
     padding-bottom: 90px;
@@ -846,16 +831,16 @@ input.email_text::placeholder {
     margin-top: 100px;
 }
 
-.Cooming_soon_taital {
+.coming_soon_title {
     width: 100%;
     float: left;
     font-size: 50px;
-    color: #141414;
+    color: light-dark(#141414, white);
     padding-top: 15px;
     text-transform: uppercase;
 }
 
-.Cooming_soon_taital:after {
+.coming_soon_title:after {
     content: '';
     position: absolute;
     border: 2px solid #464646;
@@ -865,10 +850,10 @@ input.email_text::placeholder {
     top: 50px;
 }
 
-.long_text_1 {
+.coming_soon_text {
     width: 100%;
     float: left;
-    color: #202123;
+    color: light-dark(#202123, white);
     font-size: 16px;
     margin: 0px;
 }
@@ -880,15 +865,6 @@ input.email_text::placeholder {
     height: auto;
     padding: 90px 0px;
 }
-
-.footer_section {
-    width: 100%;
-    float: left;
-    background-color: #005477;
-    height: auto;
-    padding: 90px 0px;
-}
-
 
 .footer_menu {
     width: 100%;

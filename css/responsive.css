@@ -131,7 +131,7 @@
     .logo {
         width: 10%;
     }
-    .banner_taital {
+    .banner_title {
         font-size: 42px;
     }
     .arrival_text {
@@ -142,19 +142,13 @@
         width: 70px;
         top: 32px;
     }
-    .mins_text_1 {
-        font-size: 15px;
-    }
-    .mins_text {
-        font-size: 15px;
-    }
     .long_text {
         font-size: 14px;
     }
     .jesusroch_text {
         padding-top: 280px;
     }
-    .paly_bt {
+    .play_bt {
         padding-top: 20px;
     }
     .padding_10 {
@@ -174,10 +168,10 @@
     .movies_menu li {
         padding: 0px 14px;
     }
-    .Cooming_soon_taital {
+    .coming_soon_title {
         font-size: 30px;
     }
-    .Cooming_soon_taital::after {
+    .coming_soon_title::after {
         right: initial;
         width: 50px;
         top: 36px;
@@ -194,7 +188,7 @@
     .navbar-light .navbar-toggler {
         border-color: #000;
     }
-    .banner_taital {
+    .banner_title {
         width: 100%;
         font-size: 36px;
         line-height: 50px;
@@ -224,10 +218,10 @@
     .there_text {
         font-size: 14px;
     }
-    .Cooming_soon_taital {
+    .coming_soon_title {
         font-size: 30px;
     }
-    .Cooming_soon_taital::after {
+    .coming_soon_title::after {
         right: initial;
         width: 50px;
         top: 36px;
@@ -256,7 +250,7 @@
     .banner_section {
         background: #3c0e0e;
     }
-    .banner_taital {
+    .banner_title {
         width: 75%;
         font-size: 42px;
         line-height: 60px;
@@ -269,10 +263,6 @@
     }
     .jesusroch_text {
         padding-top: 240px;
-    }
-    .mins_text {
-        width: 100%;
-        font-size: 17px;
     }
     .icon_2 {
         font-size: 15px;
@@ -328,13 +318,13 @@
     .right_arrow {
         width: 20%;
     }
-    .cooming_section .row {
+    .coming_section .row {
         flex-direction: column-reverse;
     }
-    .Cooming_soon_taital {
+    .coming_soon_title {
         font-size: 30px;
     }
-    .Cooming_soon_taital::after {
+    .coming_soon_title::after {
         right: initial;
         width: 50px;
         top: 36px;
@@ -369,7 +359,7 @@
     .banner_section {
         background: #3c0e0e;
     }
-    .banner_taital {
+    .banner_title {
         width: 95%;
         font-size: 30px;
         line-height: 40px;
@@ -393,9 +383,6 @@
     }
     .movie_main {
         display: initial;
-    }
-    .mins_text_1 {
-        width: 100%;
     }
     .long_text {
         font-size: 14px;
@@ -430,13 +417,13 @@
     .right_arrow {
         width: 20%;
     }
-    .cooming_section .row {
+    .coming_section .row {
         flex-direction: column-reverse;
     }
-    .Cooming_soon_taital {
+    .coming_soon_title {
         font-size: 30px;
     }
-    .Cooming_soon_taital::after {
+    .coming_soon_title::after {
         right: initial;
         width: 50px;
         top: 36px;

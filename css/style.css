@@ -362,108 +362,49 @@ html {
     padding-bottom: 90px;
 }
 
-.hxh {
-    width: 100%;
-    float: left;
-    background-image: url(../images/hxh.png);
-    height: auto;
-    background-size: 100%;
+.carousel_cover{
     background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    height: auto;
     padding-bottom: 40px;
+    width: 100%;
+}
+
+.hxh {
+    background-image: url(../images/couvertures/hxh.webp);
 }
 
 .hxh1 {
-    width: 100%;
-    float: left;
-    background-image: url(../images/hxh1.jpg);
-    height: auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding-bottom: 40px;
+    background-image: url(../images/couvertures/hxh1.webp);
 }
 
-
-.attrapecoeur {
-    width: 100%;
-    float: left;
-    background-image: url(../images/attrapecoeur.jpg);
-    height: auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding-bottom: 40px;
+.attrape {
+    background-image: url(../images/couvertures/attrape.webp);
 }
 
-.attrapecoeur1 {
-    width: 100%;
-    float: left;
-    background-image: url(../images/attrapecoeur1.jpg);
-    height: auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding-bottom: 40px;
+.enfant_noir {
+    background-image: url(../images/couvertures/enfant_noir.jpg);
 }
 
-
-.lenfant_noir {
-    width: 100%;
-    float: left;
-    background-image: url(../images/lenfant_noir.jpg);
-    height: auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding-bottom: 40px;
-}
-
-.lenfant_noir1 {
-    width: 100%;
-    float: left;
-    background-image: url(../images/lenfant_noir1.jpg);
-    height: auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding-bottom: 40px;
+.enfant_noir1 {
+    background-image: url(../images/couvertures/enfant_noir1.jpg);
 }
 
 .trilogie {
-    width: 100%;
-    float: left;
-    background-image: url(../images/trilogie.jpg);
-    height: auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding-bottom: 40px;
+    background-image: url(../images/couvertures/trilogie.jpg);
 }
 
 .trilogie1 {
-    width: 100%;
-    float: left;
-    background-image: url(../images/trilogie1.jpg);
-    height: auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding-bottom: 40px;
+    background-image: url(../images/couvertures/trilogie1.jpg);
 }
-
 
 .neuromancier {
-    width: 100%;
-    float: left;
-    background-image: url(../images/neuromancier.jpg);
-    height: auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding-bottom: 40px;
+    background-image: url(../images/couvertures/neuromancier.jpg);
 }
 
-
 .neuromancier1 {
-    width: 100%;
-    float: left;
-    background-image: url(../images/neuromancier1.jpg);
-    height: auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding-bottom: 40px;
+    background-image: url(../images/couvertures/neuromancier1.jpg);
 }
 
 .carousel-control-prev,

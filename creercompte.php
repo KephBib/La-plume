@@ -1,29 +1,4 @@
-<?php
-include 'db.php'; 
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nom = $_POST['nom'];
-    $prenom = $_POST['prenom'];
-    $email = $_POST['email'];
-    $pwd = password_hash($_POST['pwd'], PASSWORD_ARGON2I);
-
-    $requet = "SELECT email FROM clients WHERE email = '$email'";
-    $result=mysqli_query($conn,$requet);
-
-    if ($result->num_rows > 0) {
-        $erreur = "Cet email est déjà utilisé. Veuillez choisir un autre.";
-    } else {
-        $requete = "INSERT INTO clients (nom, prenom, email, mdp) VALUES ('$nom', '$prenom','$email', '$pwd')";
-        $resultat=mysqli_query($conn,$requete);
-        if ($resultat) {
-            header("Location: connecter.php");
-            exit();
-        } else {
-            $erreur = "Erreur lors de la création du compte. Veuillez réessayer.";
-        }
-    }
-}
-?>
 
 <!DOCTYPE html>
 <html lang="fr">

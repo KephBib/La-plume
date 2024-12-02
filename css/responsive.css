@@ -299,10 +299,10 @@
     .code_text {
         font-size: 24px;
     }
-    .iamge_movies_main {
+    .image_movies_main {
         display: initial;
     }
-    .iamge_movies {
+    .image_movies {
         margin: 0px;
     }
     .newsletter_text {
@@ -398,10 +398,10 @@
         width: 100%;
         float: left;
     }
-    .iamge_movies {
+    .image_movies {
         margin: 0;
     }
-    .iamge_movies_main {
+    .image_movies_main {
         display: initial;
     }
     .newsletter_text {

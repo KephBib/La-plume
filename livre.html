@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Plume - Livres</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <?php include 'header.html'; ?>
+
+    <main class="books_section layout_padding" role="main">
+    <div class="container">
+        <div class="books_main">
+            <section class="book_grid">
+                <!-- Book items could be dynamically generated -->
+                <article class="book_item">
+                    <img src="images/couvertures/deathnote.webp" alt="Death Note Manga book cover by Tsugumi Ohba">
+                    <h3>Death Note</h3>
+                    <div class="book_details">
+                        <span class="category">Manga</span>
+                        <span class="price">15,99 €</span>
+                    </div>
+                    <button aria-label="Add Death Note to cart">Ajouter au panier</button>
+                </article>
+                <!-- More book items would be added here -->
+            </section>
+        </div>
+    </div>
+</main>
+
+    <?php include 'footer.html'; ?>
+
+    <script src="path/to/your/js/script.js"></script>
+</body>
+
+</html>

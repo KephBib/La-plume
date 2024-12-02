@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier - La Plume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section (Similar to other pages) -->
+    <header class="header_section">
+        <div class="container-fluid">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo La Plume">
+            </a>
+            <a href="index.html" class="site-name">La Plume</a>
+
+            <div class="navbar-toggler-icon"></div>
+
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul>
+                    <li class="nav-item dropdown">
+                        <a href="#" id="thrillerDropdown" class="nav-link dropdown-toggle" role="button" bs-toggle="dropdown" aria-expanded="false">Thriller</a>
+                        <ul>
+                            <li><a href="livre.php?categorie=Thriller&sous_categorie=Thriller%20psychologique" class="dropdown-item">Thriller psychologique</a></li>
+                            <li><a href="livre.php?categorie=Thriller&sous_categorie=Thriller%20policier" class="dropdown-item">Thriller policier</a></li>
+                            <li><a href="livre.php?categorie=Thriller&sous_categorie=Thriller%20juridique" class="dropdown-item">Thriller juridique</a></li>
+                            <li><a href="livre.php?categorie=Thriller&sous_categorie=Thriller%20d'espionnage" class="dropdown-item">Thriller d'espionnage</a></li>
+                        </ul>
+                    </li>
+                    <!-- Similar dropdown structure for other categories as in header.html -->
+                </ul>
+
+                <div class="search_icon">
+                    <a href="contact.html"><img src="images/eye-icon.png">Contact</a>
+                </div>
+                <div class="search_icon">
+                    <a href="apropos.html"><img src="images/search-icon.png">A propos</a>
+                </div>
+                <div class="search_icon">
+                    <a href="connecter.php"><img src="images/user-icon.png">Se connecter</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="cart_section layout_padding">
+        <div class="container">
+            <h1>Votre Panier</h1>
+            
+            <div class="cart_main">
+                <table class="cart_table">
+                    <thead>
+                        <tr>
+                            <th>Livre</th>
+                            <th>Prix</th>
+                            <th>Quantité</th>
+                            <th>Total</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="images/deathnote.jpg" alt="Death Note">
+                                <span>Death Note</span>
+                            </td>
+                            <td>15.99€</td>
+                            <td>
+                                <input type="number" value="1" min="1">
+                            </td>
+                            <td>15.99€</td>
+                            <td>
+                                <button class="remove_btn">Supprimer</button>
+                            </td>
+                        </tr>
+                        <!-- More cart items would be added here -->
+                    </tbody>
+                </table>
+
+                <div class="cart_summary">
+                    <div class="cart_total">
+                        <h3>Total du panier</h3>
+                        <p>Sous-total: 15.99€</p>
+                        <p>Livraison: Gratuit</p>
+                        <p><strong>Total: 15.99€</strong></p>
+                    </div>
+                    <div class="cart_actions">
+                        <button class="continue_shopping_btn">Continuer mes achats</button>
+                        <button class="checkout_btn">Passer la commande</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section (Similar to footer.html) -->
+    <footer class="footer_section layout_padding">
+        <div class="container">
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    <li><a href="connecter.php">Se connecter</a></li>
+                </ul>
+            </div>
+            <div class="social_icon">
+                <ul>
+                    <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                    <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                    <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                    <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright_section">
+            <div class="container">
+                <div class="copyright_text">
+                    Copyright 2024 All Right Reserved By <a href="#">La plume</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

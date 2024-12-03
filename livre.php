@@ -4,16 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livres</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <style>
         .search-container {
             display: flex;
@@ -93,71 +83,69 @@
             background-color: #141414;
         }
     </style>
-</head>
-<body>
 
-<?php
-include('header.html');
-include('db.php');
+    <?php
+    include('header.html');
+    include('db.php');
 
-$categorie = mysqli_real_escape_string($conn, $_GET['categorie']);
-$sous_categorie = mysqli_real_escape_string($conn, $_GET['sous_categorie']);
-?>
+    $categorie = mysqli_real_escape_string($conn, $_GET['categorie']);
+    $sous_categorie = mysqli_real_escape_string($conn, $_GET['sous_categorie']);
+    ?>
 
-    <div class="search-container">
-        <input type="text" id="searchInput" class="search-input" placeholder="Rechercher un livre..." onkeyup="searchBooks()">
-    </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Rechercher un livre..." onkeyup="searchBooks()">
+        </div>
 
-<?php
+    <?php
 
-$requete = "SELECT image, titre, prix, categorie, sous_categorie, description, auteur FROM livres WHERE categorie='$categorie' AND sous_categorie='$sous_categorie'";
-$resultat = mysqli_query($conn, $requete);
+    $requete = "SELECT image, titre, prix, categorie, sous_categorie, description, auteur FROM livres WHERE categorie='$categorie' AND sous_categorie='$sous_categorie'";
+    $resultat = mysqli_query($conn, $requete);
 
-echo "<div class='books-list'>";
-    if (mysqli_num_rows($resultat) > 0) {
-        while ($ligne = mysqli_fetch_assoc($resultat)) {
-            if ($ligne['image']) {
-                $finfo = new finfo(FILEINFO_MIME_TYPE);
-                $mimeType = $finfo->buffer($ligne['image']);
-            } else {
-                echo "erreur"; 
+    echo "<div class='books-list'>";
+        if (mysqli_num_rows($resultat) > 0) {
+            while ($ligne = mysqli_fetch_assoc($resultat)) {
+                if ($ligne['image']) {
+                    $finfo = new finfo(FILEINFO_MIME_TYPE);
+                    $mimeType = $finfo->buffer($ligne['image']);
+                } else {
+                    echo "erreur"; 
+                }
+                echo "<div class='book-item' data-title='" . strtolower($ligne['titre']) . "' data-author='" . strtolower($ligne['auteur']) . "'>";
+                echo "<img src='data:$mimeType;base64," .base64_encode($ligne['image']). "' alt='Livre' class='book-image'>";
+                echo "<div class='book-info'>";
+                echo "<h2><strong>" .($ligne['titre']). "</strong></h2>";
+                echo "<strong>" .($ligne['auteur']). "</strong>";
+                echo "<p>" .($ligne['description']). "</p>";
+                echo "<h3>" .($ligne['prix']). " €</h3>";
+                echo  "<div class='center'><div class='bouton'><a href='#'>En savoir plus</a></div></div>";
+                echo "</div>";
+                echo "</div>";
             }
-            echo "<div class='book-item' data-title='" . strtolower($ligne['titre']) . "' data-author='" . strtolower($ligne['auteur']) . "'>";
-            echo "<img src='data:$mimeType;base64," .base64_encode($ligne['image']). "' alt='Livre' class='book-image'>";
-            echo "<div class='book-info'>";
-            echo "<h2><strong>" .($ligne['titre']). "</strong></h2>";
-            echo "<strong>" .($ligne['auteur']). "</strong>";
-            echo "<p>" .($ligne['description']). "</p>";
-            echo "<h3>" .($ligne['prix']). " €</h3>";
-            echo  "<div class='center'><div class='bouton'><a href='#'>En savoir plus</a></div></div>";
-            echo "</div>";
-            echo "</div>";
+        } else {
+            echo "<p style='color:black'>Aucun livre trouvé pour $sous_categorie dans $categorie.</p>";
         }
-    } else {
-        echo "<p style='color:black'>Aucun livre trouvé pour $sous_categorie dans $categorie.</p>";
-    }
-    echo "</div>";
+        echo "</div>";
 
-include('footer.html');
-?>
+    include('footer.html');
+    ?>
 
-<script>
-    function searchBooks() {
-        var query = document.getElementById("searchInput").value.toLowerCase().trim();
-        var books = document.querySelectorAll('.book-item');
+    <script>
+        function searchBooks() {
+            var query = document.getElementById("searchInput").value.toLowerCase().trim();
+            var books = document.querySelectorAll('.book-item');
 
-        books.forEach(function(book) {
-            var title = book.getAttribute('data-title') || "";
-            var author = book.getAttribute('data-author') || "";
+            books.forEach(function(book) {
+                var title = book.getAttribute('data-title') || "";
+                var author = book.getAttribute('data-author') || "";
 
-            if (title.includes(query) || author.includes(query)) {
-                book.style.display = "block"; 
-            } else {
-                book.style.display = "none"; 
-            }
-        });
-    }
-</script>
+                if (title.includes(query) || author.includes(query)) {
+                    book.style.display = "block"; 
+                } else {
+                    book.style.display = "none"; 
+                }
+            });
+        }
+    </script>
 
 </body>
 </html>

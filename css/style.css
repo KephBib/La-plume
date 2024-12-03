@@ -284,7 +284,7 @@ button {
 .banner_section {
     width: 100%;
     float: left;
-    background: linear-gradient(110deg, #005477  55%, rgba(60, 90, 90, 0) 55%), url(../images/banniere.jpg);
+    background: linear-gradient(110deg, #005477  55%, rgba(60, 90, 90, 0) 55%), url(../assets/images/banniere.jpg);
     position: relative;
     padding-bottom: 90px;
 }
@@ -372,39 +372,39 @@ html {
 }
 
 .hxh {
-    background-image: url(../images/couvertures/hxh.webp);
+    background-image: url(../assets/images/couvertures/hxh.webp);
 }
 
 .hxh1 {
-    background-image: url(../images/couvertures/hxh1.webp);
+    background-image: url(../assets/images/couvertures/hxh1.webp);
 }
 
 .attrape {
-    background-image: url(../images/couvertures/attrape.webp);
+    background-image: url(../assets/images/couvertures/attrape.webp);
 }
 
 .enfant_noir {
-    background-image: url(../images/couvertures/enfant_noir.jpg);
+    background-image: url(../assets/images/couvertures/enfant_noir.jpg);
 }
 
 .enfant_noir1 {
-    background-image: url(../images/couvertures/enfant_noir1.jpg);
+    background-image: url(../assets/images/couvertures/enfant_noir1.jpg);
 }
 
 .trilogie {
-    background-image: url(../images/couvertures/trilogie.jpg);
+    background-image: url(../assets/images/couvertures/trilogie.jpg);
 }
 
 .trilogie1 {
-    background-image: url(../images/couvertures/trilogie1.jpg);
+    background-image: url(../assets/images/couvertures/trilogie1.jpg);
 }
 
 .neuromancier {
-    background-image: url(../images/couvertures/neuromancier.jpg);
+    background-image: url(../assets/images/couvertures/neuromancier.jpg);
 }
 
 .neuromancier1 {
-    background-image: url(../images/couvertures/neuromancier1.jpg);
+    background-image: url(../assets/images/couvertures/neuromancier1.jpg);
 }
 
 .carousel-control-prev,
@@ -423,7 +423,7 @@ html {
     padding-top: 330px;
 }
 
-.movie_text {
+.book_text {
     width: 100%;
     float: left;
     font-size: 16px;
@@ -451,7 +451,7 @@ html {
     top: 98px;
 }
 
-.movie_main {
+.book_main {
     width: 100%;
     display: flex;
 }
@@ -496,7 +496,7 @@ html {
     background-color: #141414;
 }
 
-.movies_section {
+.books_section {
     width: 100%;
     float: left;
     background-color: #005477 ;
@@ -504,38 +504,38 @@ html {
     padding-bottom: 90px;
 }
 
-.movies_menu {
+.books_menu {
     width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
-.movies_menu ul {
+.books_menu ul {
     margin: 0px;
     padding: 0px;
     display: inline-block;
     text-align: center;
 }
 
-.movies_menu li {
+.books_menu li {
     float: left;
     font-size: 18px;
     color: #ffffff;
     padding: 0px 25px;
 }
 
-.movies_menu li a {
+.books_menu li a {
     color: #ffffff;
 }
 
-.movies_menu li a:hover {
+.books_menu li a:hover {
     color: #d89616;
     border-bottom: 5px solid #d89616;
     z-index: 2;
     position: relative;
 }
 
-.movies_menu:after {
+.books_menu:after {
     content: '';
     border: 1px solid #ffffff;
     position: relative;
@@ -550,14 +550,14 @@ html {
     z-index: 0;
 }
 
-.movies_menu li.active a {
+.books_menu li.active a {
     color: #d89616;
     border-bottom: 5px solid #d89616;
     z-index: 2;
     position: relative;
 }
 
-.movies_section_2 {
+.books_section_2 {
     width: 100%;
     float: left;
 }
@@ -586,7 +586,7 @@ html {
     color: #ffffff;
 }
 
-.movies_main {
+.books_main {
     width: 100%;
     float: left;
 }
@@ -693,7 +693,7 @@ html {
 .newsletter_section {
     width: 100%;
     float: left;
-    background-image: url(../images/newsletter.jpg);
+    background-image: url(../assets/images/newsletter.jpg);
     height: auto;
     padding-bottom: 90px;
     background-size: 100%;
@@ -852,12 +852,12 @@ input.email_text::placeholder {
     padding: 25px 5px 0px 5px;
 }
 
-.image_movies_main {
+.image_books_main {
     width: 100%;
     display: flex;
 }
 
-.image_movies {
+.image_books {
     width: 100%;
     float: left;
     margin: 0px 13px;

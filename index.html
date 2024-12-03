@@ -3,154 +3,18 @@
    <head>
       <!-- basic -->
       <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>La Plume</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <!-- owl stylesheets --> 
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" href="css/owl.theme.default.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-   </head>
-   <body>
-      <div class="header_section">
-         <nav class="navbar navbar-expand-lg navbar-omni omni-theme">
-             <div class="container-fluid">
-                 <a class="logo" href="index.html">
-                     <img src="images/logo.png" alt="Logo">
-                 </a>
-                 <a class="site-name" href="index.html">La Plume</a>
-                 
-                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                 </button>
-                 
-                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                     <ul class="navbar-nav me-auto ">
-                      <li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#" id="thrillerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                             Thriller
-                         </a>
-                         <ul class="dropdown-menu" aria-labelledby="thrillerDropdown">
-                             <li><a class="dropdown-item" href="livre.php?categorie=thriller&sous_categorie=thriller-psychologique">Thriller psychologique</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=thriller&sous_categorie=thriller-policier">Thriller policier</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=thriller&sous_categorie=thriller-juridique">Thriller juridique</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=thriller&sous_categorie=thriller-d'espionnage">Thriller d'espionnage</a></li>
-                         </ul>
-                     </li>
-         
-                     <li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#" id="romanceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                             Romance
-                         </a>
-                         <ul class="dropdown-menu" aria-labelledby="romanceDropdown">
-                             <li><a class="dropdown-item" href="livre.php?categorie=romance&sous_categorie=romance-contemporaine">Romance contemporaine</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=romance&sous_categorie=romance-fantastique/paranormale">Romance fantastique/paranormale</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=romance&sous_categorie=comédie-romantique">Comédie romantique</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=romance&sous_categorie=romance-dramatique">Romance dramatique</a></li>
-                         </ul>
-                     </li>
-         
-                     <li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#" id="policiersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                             Roman policier
-                         </a>
-                         <ul class="dropdown-menu" aria-labelledby="policiersDropdown">
-                             <li><a class="dropdown-item" href="livre.php?categorie=romanpolicier&sous_categorie=roman-noir">Roman noir</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=romanpolicier&sous_categorie=roman-à-énigme">Roman à énigme</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=romanpolicier&sous_categorie=polar">Polar</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=romanpolicier&sous_categorie=true-crime-(documentaire)">True crime (documentaire)</a></li>
-                         </ul>
-                     </li>
-         
-                     <li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#" id="comediesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                             Comédie
-                         </a>
-                         <ul class="dropdown-menu" aria-labelledby="comediesDropdown">
-                             <li><a class="dropdown-item" href="livre.php?categorie=comédie&sous_categorie=comédie-littéraire">Comédie littéraire</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=comédie&sous_categorie=comédie-romantique">Comédie romantique</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=comédie&sous_categorie=comédie-noire">Comédie noire</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=comédie&sous_categorie=comédie-dramatique">Comédie dramatique</a></li>
-                         </ul>
-                     </li>
-         
-                     <li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#" id="sciFiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                             Science-fiction
-                         </a>
-                         <ul class="dropdown-menu" aria-labelledby="sciFiDropdown">
-                             <li><a class="dropdown-item" href="livre.php?categorie=sciencefiction&sous_categorie=science-fiction-dystopique">Science-fiction dystopique</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=sciencefiction&sous_categorie=space-opera">Space opera</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=sciencefiction&sous_categorie=cyberpunk">Cyberpunk</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=sciencefiction&sous_categorie=science-fiction-apocalyptique/post-apocalyptique">Science-fiction apocalyptique/post-apocalyptique</a></li>
-                         </ul>
-                     </li>
-         
-                     <li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#" id="poetryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                             Poésie
-                         </a>
-                         <ul class="dropdown-menu" aria-labelledby="poetryDropdown">
-                             <li><a class="dropdown-item" href="livre.php?categorie=poésie&sous_categorie=poésie-lyrique">Poésie lyrique</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=poésie&sous_categorie=poésie-épique">Poésie épique</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=poésie&sous_categorie=poésie-engagée">Poésie engagée</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=poésie&sous_categorie=poésie-satirique">Poésie satirique</a></li>
-                         </ul>
-                     </li>
-         
-                     <li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#" id="recitDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                             Récit
-                         </a>
-                         <ul class="dropdown-menu" aria-labelledby="recitDropdown">
-                             <li><a class="dropdown-item" href="livre.php?categorie=récit&sous_categorie=autobiographie">Autobiographie</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=récit&sous_categorie=biographie">Biographie</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=récit&sous_categorie=mémoires">Mémoires</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=récit&sous_categorie=journal-intime">Journal intime</a></li>
-                         </ul>
-                     </li>
-         
-                     <li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#" id="mangaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                             Manga
-                         </a>
-                         <ul class="dropdown-menu" aria-labelledby="mangaDropdown">
-                             <li><a class="dropdown-item" href="livre.php?categorie=manga&sous_categorie=shōnen">Shōnen</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=manga&sous_categorie=shōjo">Shōjo</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=manga&sous_categorie=seinen">Seinen</a></li>
-                             <li><a class="dropdown-item" href="livre.php?categorie=manga&sous_categorie=isekai">Isekai</a></li>
-                         </ul>
-                     </li>
-                 </ul>
-                  <div class="search_icon"><a href="contact.html"><img src="images/eye-icon.png"><span class="padding_left_15">Contact</span></a></div>
-                  <div class="search_icon"><a href="panier.html"><span >Panier</span></a></div>
-                  <div class="search_icon"><a href="connecter.php"><img src="images/user-icon.png"><span class="padding_left_15">Se connecter</span></a></div>
-                 </div>
-             </div>
-         </nav>
-      </div>
+      <title>La Plume - Accueil</title>
 
-
+      <!-- head + header --> 
+      <script>
+         fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+               document.body.insertAdjacentHTML('afterbegin', data);
+            });
+      </script>
+      <!-- header end --> 
 
       <!-- banner section  -->
       <div class="banner_section layout_padding">
@@ -161,22 +25,20 @@
                   <p class="banner_text">Du thriller haletant aux récits inspirants, en passant par les romances et la science-fiction, plongez dans un univers de lecture varié et enrichissant.
 
                   </p>
-                  <div class="see_bt"><a href="#movies">Voir plus</a></div>
+                  <div class="see_bt"><a href="#books">Voir plus</a></div>
                </div>
                <div class="col-md-6">
-                  <div class="play_icon"><a href="#"><img src="images/livre.png"></a></div>
+                  <div class="play_icon"><a href="#"><img src="assets/images/livre.png"></a></div>
                </div>
             </div>
          </div>
       </div>
       <!-- banner section end -->
 
-
-
       <!--Arrival section-->
       <div class="arrival_section layout_padding">
          <div class="container">
-            <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="bookCarousel" class="carousel slide" data-bs-ride="carousel">
                <div class="carousel-inner">
                   <!-- Slide 1 -->
                   <div class="carousel-item active">
@@ -184,13 +46,13 @@
                         <div class="col-sm-6 col-lg-4">
                               <div class="carousel_cover hxh">
                                  <h2 class="jesusroch_text">Manga</h2>
-                                 <p class="movie_text">Shōnen</p>
+                                 <p class="book_text">Shōnen</p>
                               </div>
                         </div>
                         <div class="col-sm-6 col-lg-4">
                               <div class="carousel_cover hxh1">
                                  <h2 class="jesusroch_text">Manga</h2>
-                                 <p class="movie_text">Shōnen</p>
+                                 <p class="book_text">Shōnen</p>
                               </div>
                         </div>
                         <div class="col-sm-8 col-lg-4">
@@ -207,7 +69,7 @@
                         <div class="col-sm-6 col-lg-4">
                               <div class="carousel_cover attrape">
                                  <h2 class="jesusroch_text">Comédie</h2>
-                                 <p class="movie_text">Comédie noire</p>
+                                 <p class="book_text">Comédie noire</p>
                               </div>
                         </div>
                         <div class="col-sm-8 col-lg-4">
@@ -224,13 +86,13 @@
                         <div class="col-sm-6 col-lg-4">
                               <div class="carousel_cover enfant_noir">
                                  <h2 class="jesusroch_text">Récit</h2>
-                                 <p class="movie_text">Autobiographie</p>
+                                 <p class="book_text">Autobiographie</p>
                               </div>
                         </div>
                         <div class="col-sm-6 col-lg-4">
                               <div class="carousel_cover enfant_noir1">
                                  <h2 class="jesusroch_text">Récit</h2>
-                                 <p class="movie_text">Autobiographie</p>
+                                 <p class="book_text">Autobiographie</p>
                               </div>
                         </div>
                         <div class="col-sm-8 col-lg-4">
@@ -247,13 +109,13 @@
                         <div class="col-sm-6 col-lg-4">
                            <div class="carousel_cover trilogie">
                                  <h2 class="jesusroch_text">Roman policier</h2>
-                                 <p class="movie_text">Roman noir</p>
+                                 <p class="book_text">Roman noir</p>
                            </div>
                         </div>
                         <div class="col-sm-6 col-lg-4">
                            <div class="carousel_cover trilogie1">
                                  <h2 class="jesusroch_text">Roman policier</h2>
-                                 <p class="movie_text">Roman noir</p>
+                                 <p class="book_text">Roman noir</p>
                            </div>
                         </div>
                         <div class="col-sm-8 col-lg-4">
@@ -270,13 +132,13 @@
                         <div class="col-sm-6 col-lg-4">
                            <div class="carousel_cover neuromancier">
                                  <h2 class="jesusroch_text">Science-fiction</h2>
-                                 <p class="movie_text">Cyberpunk</p>
+                                 <p class="book_text">Cyberpunk</p>
                            </div>
                         </div>
                         <div class="col-sm-6 col-lg-4">
                            <div class="carousel_cover neuromancier1">
                                  <h2 class="jesusroch_text">Science-fiction</h2>
-                                 <p class="movie_text">Cyberpunk</p>
+                                 <p class="book_text">Cyberpunk</p>
                            </div>
                         </div>
                         <div class="col-sm-8 col-lg-4">
@@ -287,10 +149,10 @@
                      </div>
                   </div>
 
-                  <button id="prevBtn" class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+                  <button id="prevBtn" class="carousel-control-prev" type="button" data-bs-target="#bookCarousel" data-bs-slide="prev">
                      <span class="visually-hidden">Previous</span>
                   </button>
-                  <button id="nextBtn" class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+                  <button id="nextBtn" class="carousel-control-next" type="button" data-bs-target="#bookCarousel" data-bs-slide="next">
                      <span class="visually-hidden">Next</span>
                   </button>
                </div>
@@ -301,7 +163,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
       <script>
          // Initialisation du carousel
-         const carousel = new bootstrap.Carousel(document.getElementById('movieCarousel'), {
+         const carousel = new bootstrap.Carousel(document.getElementById('bookCarousel'), {
             interval: 3000,  // 2 secondes
             wrap: true,      // Défilement en boucle
             pause: false     // Ne pas mettre en pause au survol
@@ -309,16 +171,14 @@
       </script>
       <!--Arrival section end-->
 
-
-
-      <!-- movies section start -->
-      <div class="movies_section layout_padding" id="movies">
+      <!-- books section start -->
+      <div class="books_section layout_padding" id="books">
          <div class="container">
-            <div class="movies_menu">
+            <div class="books_menu">
                <ul>
                   <li class=""><a href="#">Thriller</a></li>
                   <li><a href="tv.html">Romance</a></li>
-                  <li><a href="movies.html">Roman policier</a></li>
+                  <li><a href="books.html">Roman policier</a></li>
                   <li><a href="#">Comédie</a></li>
                   <li><a href="celebs.html">Science-fiction</a></li>
                   <li><a href="#">Poésie</a></li>
@@ -326,25 +186,24 @@
                   <li><a href="#">Manga</a></li>
                </ul>
             </div>
-            <div class="movies_section_2 layout_padding">
+            <div class="books_section_2 layout_padding">
                <h2 class="letest_text">Nouveautés</h2>
                <div class="seemore_bt"><a href="#">Voir plus</a></div>
-               <div class="movies_main">
-                  <div class="image_movies_main">
-                     <div class="image_movies">
+               <div class="books_main">
+                  <div class="image_books_main">
+                     <div class="image_books">
                         <div class="image_3">
-                           <img src="images/couvertures/deathnote.webp" class="image" style="width:100%">
+                           <img src="assets/images/couvertures/deathnote.webp" class="image" style="width:100%">
                            <div class="middle">
-                              <div class="playnow_bt">Découvrir</div>
+                              <div class="playnow_bt"><a href="details.php">Découvrir</a></div>
                            </div>
                         </div>
                         <h1 class="code_text">Death note</h1>
                         <p class="there_text">Tsugumi Ohba & Takeshi Obata</p>
-                        
                      </div>
-                     <div class="image_movies">
+                     <div class="image_books">
                         <div class="image_3">
-                           <img src="images/couvertures/lesmots.jpg" class="image" style="width:100%">
+                           <img src="assets/images/couvertures/lesmots.jpg" class="image" style="width:100%">
                            <div class="middle">
                               <div class="playnow_bt">Découvrir</div>
                            </div>
@@ -353,9 +212,9 @@
                         <p class="there_text">Jean-Paul Sartre</p>
                        
                      </div>
-                     <div class="image_movies">
+                     <div class="image_books">
                         <div class="image_3">
-                           <img src="images/couvertures/etoile.jpg" class="image" style="width:100%">
+                           <img src="assets/images/couvertures/etoile.jpg" class="image" style="width:100%">
                            <div class="middle">
                               <div class="playnow_bt">Découvrir</div>
                            </div>
@@ -364,9 +223,9 @@
                         <p class="there_text">John Green</p>
                        
                      </div>
-                     <div class="image_movies">
+                     <div class="image_books">
                         <div class="image_3">
-                           <img src="images/couvertures/dahlianoir.jpg" class="image" style="width:100%">
+                           <img src="assets/images/couvertures/dahlianoir.jpg" class="image" style="width:100%">
                            <div class="middle">
                               <div class="playnow_bt">Découvrir</div>
                            </div>
@@ -375,9 +234,9 @@
                         <p class="there_text">James Ellroy</p>
                        
                      </div>
-                     <div class="image_movies">
+                     <div class="image_books">
                         <div class="image_3">
-                           <img src="images/couvertures/rising.jpg" class="image" style="width:100%">
+                           <img src="assets/images/couvertures/rising.jpg" class="image" style="width:100%">
                            <div class="middle">
                               <div class="playnow_bt">Découvrir</div>
                            </div>
@@ -389,14 +248,14 @@
                   </div>
                </div>
             </div>
-            <div class="movies_section_2 layout_padding">
+            <div class="books_section_2 layout_padding">
                <h2 class="letest_text">Nos bestsellers</h2>
                <div class="seemore_bt"><a href="#">Voir plus</a></div>
-               <div class="movies_main">
-                  <div class="image_movies_main">
-                     <div class="image_movies">
+               <div class="books_main">
+                  <div class="image_books_main">
+                     <div class="image_books">
                         <div class="image_3">
-                           <img src="images/couvertures/orgueil.jpeg" class="image" style="width:100%">
+                           <img src="assets/images/couvertures/orgueil.jpeg" class="image" style="width:100%">
                            <div class="middle">
                               <div class="playnow_bt">Découvrir</div>
                            </div>
@@ -405,17 +264,17 @@
                         <p class="there_text">Jane Austen</p>
                         <div class="star_icon">
                            <ul>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
                            </ul>
                         </div>
                      </div>
-                     <div class="image_movies">
+                     <div class="image_books">
                         <div class="image_3">
-                           <img src="images/couvertures/onepiece.jpg" class="image" style="width:100%">
+                           <img src="assets/images/couvertures/onepiece.jpg" class="image" style="width:100%">
                            <div class="middle">
                               <div class="playnow_bt">Découvrir</div>
                            </div>
@@ -424,17 +283,17 @@
                         <p class="there_text">Eiichiro Oda</p>
                         <div class="star_icon">
                            <ul>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
                            </ul>
                         </div>
                      </div>
-                     <div class="image_movies">
+                     <div class="image_books">
                         <div class="image_3">
-                           <img src="images/couvertures/twilight.png" class="image" style="width:100%">
+                           <img src="assets/images/couvertures/twilight.png" class="image" style="width:100%">
                            <div class="middle">
                               <div class="playnow_bt">Découvrir</div>
                            </div>
@@ -443,17 +302,17 @@
                         <p class="there_text">Stephenie Meyer</p>
                         <div class="star_icon">
                            <ul>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
                            </ul>
                         </div>
                      </div>
-                     <div class="image_movies">
+                     <div class="image_books">
                         <div class="image_3">
-                           <img src="images/couvertures/fightclub.jpg" class="image" style="width:100%">
+                           <img src="assets/images/couvertures/fightclub.jpg" class="image" style="width:100%">
                            <div class="middle">
                               <div class="playnow_bt">Découvrir</div>
                            </div>
@@ -462,17 +321,17 @@
                         <p class="there_text">Chuck Palahniuk </p>
                         <div class="star_icon">
                            <ul>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
                            </ul>
                         </div>
                      </div>
-                     <div class="image_movies">
+                     <div class="image_books">
                         <div class="image_3">
-                           <img src="images/couvertures/endersgame.jpg" class="image" style="width:100%">
+                           <img src="assets/images/couvertures/endersgame.jpg" class="image" style="width:100%">
                            <div class="middle">
                               <div class="playnow_bt">Découvrir</div>
                            </div>
@@ -481,25 +340,25 @@
                         <p class="there_text">Gillian Flynn</p>
                         <div class="star_icon">
                            <ul>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
                            </ul>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="movies_section_2 layout_padding">
+            <div class="books_section_2 layout_padding">
                <h2 class="letest_text">Livres plébiscités par les lecteurs</h2>
                <div class="seemore_bt"><a href="#">Voir plus</a></div>
-               <div class="movies_main">
-                  <div class="image_movies_main">
-                     <div class="image_movies">
+               <div class="books_main">
+                  <div class="image_books_main">
+                     <div class="image_books">
                         <div class="image_3">
-                           <img src="images/couvertures/L-ombre-du-vent.jpg" class="image" style="width:100%">
+                           <img src="assets/images/couvertures/L-ombre-du-vent.jpg" class="image" style="width:100%">
                            <div class="middle">
                               <div class="playnow_bt">Découvrir</div>
                            </div>
@@ -508,17 +367,17 @@
                         <p class="there_text">Carlos Ruiz Zafón</p>
                         <div class="star_icon">
                            <ul>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
                            </ul>
                         </div>
                      </div>
-                     <div class="image_movies">
+                     <div class="image_books">
                         <div class="image_3">
-                           <img src="images/couvertures/crime.jpg" class="image" style="width:100%">
+                           <img src="assets/images/couvertures/crime.jpg" class="image" style="width:100%">
                            <div class="middle">
                               <div class="playnow_bt">Découvrir</div>
                            </div>
@@ -527,17 +386,17 @@
                         <p class="there_text">Fiodor Dostoïevski </p>
                         <div class="star_icon">
                            <ul>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
                            </ul>
                         </div>
                      </div>
-                     <div class="image_movies">
+                     <div class="image_books">
                         <div class="image_3">
-                           <img src="images/couvertures/bleach.webp" class="image" style="width:100%">
+                           <img src="assets/images/couvertures/bleach.webp" class="image" style="width:100%">
                            <div class="middle">
                               <div class="playnow_bt">Découvrir</div>
                            </div>
@@ -546,17 +405,17 @@
                         <p class="there_text">Tite Kubo</p>
                         <div class="star_icon">
                            <ul>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
                            </ul>
                         </div>
                      </div>
-                     <div class="image_movies">
+                     <div class="image_books">
                         <div class="image_3">
-                           <img src="images/couvertures/riviere.jpg" class="image" style="width:100%">
+                           <img src="assets/images/couvertures/riviere.jpg" class="image" style="width:100%">
                            <div class="middle">
                               <div class="playnow_bt">Découvrir</div>
                            </div>
@@ -565,17 +424,17 @@
                         <p class="there_text">Jean-Christophe Grangé</p>
                         <div class="star_icon">
                            <ul>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
                            </ul>
                         </div>
                      </div>
-                     <div class="image_movies">
+                     <div class="image_books">
                         <div class="image_3">
-                           <img src="images/couvertures/journal.jpeg" class="image" style="width:100%">
+                           <img src="assets/images/couvertures/journal.jpeg" class="image" style="width:100%">
                            <div class="middle">
                               <div class="playnow_bt">Découvrir</div>
                            </div>
@@ -584,11 +443,11 @@
                         <p class="there_text">Anne Frank</p>
                         <div class="star_icon">
                            <ul>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
-                              <li><a href="#"><img src="images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
+                              <li><img src="assets/images/star-icon.png"></a></li>
                            </ul>
                         </div>
                      </div>
@@ -598,9 +457,7 @@
             <div class="seebt_1"><a href="#">Voir plus</a></div>
          </div>
       </div>
-      <!-- movies section end -->
-
-
+      <!-- books section end -->
 
       <!-- newsletter section start -->
       <div class="newsletter_section layout_padding">
@@ -611,7 +468,7 @@
                <div class="mail_main">
                   <input type="text" class="email_text" placeholder="Ne manquez plus aucune page ! Entrez votre email" name="Enter Your email">
                   <div class="right_arrow">
-                     <a href="#"><img src="images/right-arrow.png"></a>
+                     <a href="#"><img src="assets/images/right-arrow.png"></a>
                   </div>
                </div>
             </div>
@@ -619,31 +476,26 @@
       </div>
       <!-- newsletter section end -->
 
-
-
       <!-- coming  section start -->
       <div class="coming_section layout_padding">
          <div class="container">
             <div class="row">
                <div class="col-md-6">
                   <div class="image_17">
-                     <div class="image_17"><img src="images/couvertures/hunger.webp"></div>
+                     <div class="image_17"><img src="assets/images/couvertures/hunger.webp"></div>
                   </div>
                </div>
                <div class="col-md-6">
                   <h1 class="number_text">01</h1>
                   <h1 class="coming_soon_title">Bientôt dispo !</h1>
-                  <p class="coming_soon_text">Un nouveau chapitre passionnant arrive bientôt. Restez à l’affut et préparez-vous à découvrir des nouveautés qui captiveront tous les amateurs de lecture.<br><br><b>
-
-                     Ne manquez pas l'occasion de plonger dans votre prochaine grande aventure !</b></p>
+                  <p class="coming_soon_text">Un nouveau chapitre passionnant arrive bientôt. Restez à l’affut et préparez-vous à découvrir des nouveautés qui captiveront tous les amateurs de lecture.<br><br><b>Ne manquez pas l'occasion de plonger dans votre prochaine grande aventure !</b></p>
                </div>
             </div>
          </div>
       </div>
       <!-- coming  section end -->
 
-
-
+      <!-- footer -->
       <script>
          fetch('footer.html')
             .then(response => response.text())
@@ -651,8 +503,7 @@
                document.body.insertAdjacentHTML('beforeend', data);
             });
       </script>
-
-
+      <!-- footer end -->
 
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>

@@ -157,15 +157,15 @@
     .icon_2 {
         font-size: 13px;
     }
-    .movies_menu::after {
+    .books_menu::after {
         width: 670px;
         left: initial;
         top: -10px;
     }
-    .movies_menu {
+    .books_menu {
         width: 100%;
     }
-    .movies_menu li {
+    .books_menu li {
         padding: 0px 14px;
     }
     .coming_soon_title {
@@ -201,15 +201,15 @@
         width: 70px;
         top: 32px;
     }
-    .movies_menu::after {
+    .books_menu::after {
         width: 670px;
         left: initial;
         top: -10px;
     }
-    .movies_menu {
+    .books_menu {
         width: 100%;
     }
-    .movies_menu li {
+    .books_menu li {
         padding: 0px 14px;
     }
     .code_text {
@@ -278,31 +278,31 @@
     .long_text {
         font-size: 14px;
     }
-    .movies_menu li {
+    .books_menu li {
         font-size: 16px;
         padding: 0px 7px;
     }
-    .movies_menu::after {
+    .books_menu::after {
         width: 510px;
         text-align: center;
         right: 0;
         top: -8px;
         left: 0px;
     }
-    .movies_menu {
+    .books_menu {
         width: 100%;
     }
-    .movies_main {
+    .books_main {
         width: 100%;
         float: left;
     }
     .code_text {
         font-size: 24px;
     }
-    .image_movies_main {
+    .image_books_main {
         display: initial;
     }
-    .image_movies {
+    .image_books {
         margin: 0px;
     }
     .newsletter_text {
@@ -381,27 +381,27 @@
         width: 80px;
         top: 42px;
     }
-    .movie_main {
+    .book_main {
         display: initial;
     }
     .long_text {
         font-size: 14px;
     }
-    .movies_menu li {
+    .books_menu li {
         font-size: 18px;
         padding: 0px 7px;
     }
-    .movies_menu {
+    .books_menu {
         width: 100%;
     }
-    .movies_main {
+    .books_main {
         width: 100%;
         float: left;
     }
-    .image_movies {
+    .image_books {
         margin: 0;
     }
-    .image_movies_main {
+    .image_books_main {
         display: initial;
     }
     .newsletter_text {
